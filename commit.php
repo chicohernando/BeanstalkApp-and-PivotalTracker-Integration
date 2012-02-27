@@ -2,7 +2,7 @@
 
 	if($_REQUEST['payload']){
 
-		$pivotalAPIToken = 'PLACE API TOKEN HERE'; // Place Your Pivotal Tracker API Token Here
+		$pivotalAPIToken = $_ENV["PIVOTAL_API_TOKEN"]; // Place Your Pivotal Tracker API Token Here
 
 		//Set up the Curl request to the correct location and correct headers
 		$curlRequest = curl_init("http://www.pivotaltracker.com/services/v3/source_commits");
