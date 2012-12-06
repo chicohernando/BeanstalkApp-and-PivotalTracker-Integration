@@ -16,7 +16,9 @@ It's recommended to put this script behind HTTP authentication. Once protected, 
 
 Replace SCRIPT URL with the url of where the script is located.
 
-Open the commits.php and place your Pivotal Tracker API Token where it says:
+There are two ways to set your Pivotal Tracker API Token.  The first way is to set an environment variable named PIVOTAL_TRACKER_API_TOKEN and have it set to your key.
+
+The second way is to open the commits.php and place your Pivotal Tracker API Token where it says:
 
 	$pivotalAPIToken = 'PLACE API TOKEN HERE';
 
